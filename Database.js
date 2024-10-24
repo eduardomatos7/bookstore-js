@@ -63,10 +63,10 @@ module.exports = class Database{
     }
 
     showStorage(){
-        console.table(this.showStorage.authors)
-        console.table(this.showStorage.books)
-        console.table(this.showStorage.posters)
-        console.table(this.showStorage.users)
-        console.table(this.showStorage.orders.map(order => order.data))
+        console.table(this.#storage.authors)
+        console.table(this.#storage.books)
+        console.table(this.#storage.posters)
+        console.table(this.#storage.users)
+        console.table(this.#storage.orders.map(order => order.data))
     }
 }
